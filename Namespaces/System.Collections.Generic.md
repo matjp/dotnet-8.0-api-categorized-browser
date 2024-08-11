@@ -1,4 +1,4 @@
-* Classes:
+* Classes
   * `CollectionExtensions` - Provides extension methods for generic collections.
   * `Comparer<T>` - Provides a base class for implementations of the `IComparer<T>` generic interface.
   * `Dictionary<TKey,TValue>.KeyCollection` - Represents the collection of keys in a `Dictionary<TKey,TValue>`. This class cannot be inherited.
