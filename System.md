@@ -1,9 +1,25 @@
-System Namespace
+### System Namespace
 
-* Contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
+<details>
+<summary>ADO.NET</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
+
+* Namespaces
+  * [`System.Data`](https://learn.microsoft.com/en-us/dotnet/api/system.data?view=net-8.0) - Provides access to classes that represent the ADO.NET architecture. ADO.NET lets you build components that efficiently manage data from multiple data sources.
+  * [`System.Data.Common`](https://learn.microsoft.com/en-us/dotnet/api/system.data.common?view=net-8.0) - Contains classes shared by .NET data providers.
+  * [`System.Data.Odbc`](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc?view=net-8.0) - The System.Data.Odbc namespace is the .NET Framework Data Provider for ODBC.
+  * [`System.Data.OleDb`](https://learn.microsoft.com/en-us/dotnet/api/system.data.oledb?view=net-8.0) - The System.Data.OleDb namespace is the.NET Framework Data Provider for OLE DB.
+  * [`System.Data.OracleClient`](https://learn.microsoft.com/en-us/dotnet/api/system.data.oracleclient?view=net-8.0) - The System.Data.OracleClient namespace is the .NET Framework Data Provider for Oracle.
+  * [`System.Data.SqlClient`](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=net-8.0) - The System.Data.SqlClient namespace is the .NET Data Provider for SQL Server.
+  * [`System.Data.SqlTypes`](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqltypes?view=net-8.0) - Provides classes for native data types in SQL Server. These classes provide a safer, faster alternative to the data types provided by the .NET Framework common language runtime (CLR). Using the classes in this namespace helps prevent type conversion errors caused by loss of precision. Because other data types are converted to and from SqlTypes behind the scenes, explicitly creating and using objects within this namespace also yields faster code.
+
+</details>
 
 <details>
 <summary>Attributes</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/)
 
 * Classes
   * `Attribute` - Represents the base class for custom attributes.
@@ -20,24 +36,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Cloning</summary>
-
-* Interfaces
-  * `ICloneable` - Supports cloning, which creates a new instance of a class with the same value as an existing instance.
-
-</details>
-
-<details>
-<summary>CodeDom</summary>
-
-* Namespaces
-  * [`System.CodeDom`](https://learn.microsoft.com/en-us/dotnet/api/system.codedom?view=net-8.0) - Contains classes that can be used to represent the elements and structure of a source code document. The classes in this namespace can be used to model the structure of a source code document that can be output as source code in a supported language using the functionality provided by the System.CodeDom.Compiler namespace.
-  * [`System.CodeDom.Compiler`](https://learn.microsoft.com/en-us/dotnet/api/system.codedom.compiler?view=net-8.0) - Contains types for managing the generation and compilation of source code in supported programming languages. Code generators can each produce source code in a particular programming language based on the structure of Code Document Object Model (CodeDOM) source code models consisting of elements provided by the System.CodeDom namespace.
-
-</details>
-
-<details>
 <summary>Collections</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/collections/)
 
 * Classes
   * `Array` - Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the base class for all arrays in the common language runtime.
@@ -62,54 +63,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Comparison</summary>
-
-* Classes
-  * `StringComparer` - Represents a string comparison operation that uses specific case and culture-based or ordinal comparison rules.
-* Delegates
-  * `Comparison<T>` - Represents the method that compares two objects of the same type.
-  * `Predicate<T>` - Represents the method that defines a set of criteria and determines whether the specified object meets those criteria.
-* Enums
-  * `StringComparison` - Specifies the culture, case, and sort rules to be used by certain overloads of the Compare(String, String) and Equals(Object) methods.
-* Interfaces
-  * `IComparable` - Defines a generalized type-specific comparison method that a value type or class implements to order or sort its instances.
-  * `IComparable<T>` - Defines a generalized comparison method that a value type or class implements to create a type-specific comparison method for ordering or sorting its instances.
-  * `IEquatable<T>` - Defines a generalized method that a value type or class implements to create a type-specific method for determining equality of instances.
-
-</details>
-
-<details>
-<summary>Component Model</summary>
-
-* Interfaces
-  * `IServiceProvider` - Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.
-* Namespaces
-  * [`System.ComponentModel`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel?view=net-8.0) - Provides classes that are used to implement the run-time and design-time behavior of components and controls. This namespace includes the base classes and interfaces for implementing attributes and type converters, binding to data sources, and licensing components.
-  * [`System.ComponentModel.Composition`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition?view=net-8.0) - This namespace provides classes that constitute the core of the Managed Extensibility Framework, or MEF.
-  * [`System.ComponentModel.Composition.Hosting`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.hosting?view=net-8.0) - Provides Managed Extensibility Framework (MEF) types that are useful to developers of extensible applications, or hosts.
-  * [`System.ComponentModel.Composition.Primitives`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.primitives?view=net-8.0) - This namespace provides the primitive types underlying the MEF programming model.
-  * [`System.ComponentModel.Composition.ReflectionModel`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.reflectionmodel?view=net-8.0) - Provides Managed Extensibility Framework (MEF) types for developers who use a reflection-based programming model.
-  * [`System.ComponentModel.Composition.Registration`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.registration?view=net-8.0) - Contains types that enable rule-based configuration of Managed Extensibility Framework (MEF) parts.
-  * [`System.ComponentModel.DataAnnotations`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=net-8.0) - Provides attribute classes that are used to define metadata for ASP.NET MVC and ASP.NET data controls.
-  * [`System.ComponentModel.DataAnnotations.Schema`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.schema?view=net-8.0) - Provides support for attribute classes that are used to define metadata for ASP.NET MVC and ASP.NET data controls.
-  * [`System.ComponentModel.Design`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.design?view=net-8.0) - Contains classes that developers can use to build custom design-time behavior for components and user interfaces for configuring components at design time. The design time environment provides systems that enable developers to arrange components and configure their properties. Some components may require specific design-time only behavior to function properly in a design time environment. It may also be valuable to provide custom user interfaces which assist developers in configuring components or the values of complex data types. The classes and interfaces defined within this namespace can be used to build design-time behavior for components, access design-time services, and implement customized design-time configuration interfaces.
-  * [`System.ComponentModel.Design.Serialization`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.design.serialization?view=net-8.0) - Provides types that support customization and control of serialization at design time.
-
-</details>
-
-<details>
-<summary>Composition</summary>
-
-* Namespaces
-  * [`System.Composition`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes for creating and specifying export attributes, retrieving exports from a composition, configuring import attributes, and for specifying how parts interact during composition.
-  * [`System.Composition.Convention`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes that represent convention builders for constructing rules used to configure CLR objects as MEF parts.
-  * [`System.Composition.Hosting`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes for building and configuring a composition container and for reporting exceptions from a failed composition.
-  * [`System.Composition.Hosting.Core`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes that represent core functionality of the composition engine, including composition operations, contracts, part dependencies, export descriptions, and the lifetime context of a shared part that governs how it can be disposed.
-
-</details>
-
-<details>
 <summary>Configuration</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/core/extensions/configuration)
 
 * Namespaces
   * [`System.Configuration`](https://learn.microsoft.com/en-us/dotnet/api/system.configuration?view=net-8.0) - Contains the types that provide the programming model for handling configuration data.
@@ -121,6 +77,8 @@ System Namespace
 
 <details>
 <summary>Console</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/building-console-apps)
 
 * Classes
   * `Console` - Represents the standard input, output, and error streams for console applications. This class cannot be inherited.
@@ -138,73 +96,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Conversion</summary>
-
-* Classes
-  * `BitConverter` - Converts base data types to an array of bytes, and an array of bytes to base data types.
-  * `Convert` - Converts a base data type to another base data type.
-* Delegates
-  * `Converter<TInput,TOutput>` - Represents a method that converts an object from one type to another type.
-* Exception Classes
-  * `InvalidCastException` - The exception that is thrown for invalid casting or explicit conversion.
-* Interfaces
-  * `IConvertible` - Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value.
-
-</details>
-
-<details>
-<summary>Data</summary>
-
-* Namespaces
-  * [`System.Data`](https://learn.microsoft.com/en-us/dotnet/api/system.data?view=net-8.0) - Provides access to classes that represent the ADO.NET architecture. ADO.NET lets you build components that efficiently manage data from multiple data sources.
-  * [`System.Data.Common`](https://learn.microsoft.com/en-us/dotnet/api/system.data.common?view=net-8.0) - Contains classes shared by .NET data providers.
-  * [`System.Data.Odbc`](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc?view=net-8.0) - The System.Data.Odbc namespace is the .NET Framework Data Provider for ODBC.
-  * [`System.Data.OleDb`](https://learn.microsoft.com/en-us/dotnet/api/system.data.oledb?view=net-8.0) - The System.Data.OleDb namespace is the.NET Framework Data Provider for OLE DB.
-  * [`System.Data.OracleClient`](https://learn.microsoft.com/en-us/dotnet/api/system.data.oracleclient?view=net-8.0) - The System.Data.OracleClient namespace is the .NET Framework Data Provider for Oracle.
-  * [`System.Data.SqlClient`](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=net-8.0) - The System.Data.SqlClient namespace is the .NET Data Provider for SQL Server.
-  * [`System.Data.SqlTypes`](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqltypes?view=net-8.0) - Provides classes for native data types in SQL Server. These classes provide a safer, faster alternative to the data types provided by the .NET Framework common language runtime (CLR). Using the classes in this namespace helps prevent type conversion errors caused by loss of precision. Because other data types are converted to and from SqlTypes behind the scenes, explicitly creating and using objects within this namespace also yields faster code.
-
-</details>
-
-<details>
-<summary>Data Types</summary>
-
-* Attributes
-  * `FlagsAttribute` - Indicates that an enumeration can be treated as a bit field; that is, a set of flags.
-* Classes
-  * `Activator` - Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited.
-  * `ContextBoundObject` - Defines the base class for all context-bound classes.
-  * `DBNull` - Represents a nonexistent value. This class cannot be inherited.
-  * `Enum` - Provides the base class for enumerations.
-  * `Lazy<T>` - Provides support for lazy initialization.
-  * `Lazy<T,TMetadata>` - Provides a lazy indirect reference to an object and its associated metadata for use by the Managed Extensibility Framework.
-  * `MarshalByRefObject` - Enables access to objects across application domain boundaries in applications that support remoting.
-  * `Nullable` - Supports a value type that can be assigned null. This class cannot be inherited.
-  * `Object` - Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
-  * `String` - Represents text as a sequence of UTF-16 code units.
-  * `ValueType` - Provides the base class for value types.
-  * `WeakReference` - Represents a weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.
-  * `WeakReference<T>` - Represents a typed weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.
-* Enums
-  * `TypeCode` - Specifies the type of an object.
-* Structs
-  * `Boolean` - Represents a Boolean (true or false) value.
-  * `Byte` - Represents an 8-bit unsigned integer.
-  * `Char` - Represents a character as a UTF-16 code unit.
-  * `Guid` - Represents a globally unique identifier (GUID).
-  * `HashCode` - Combines the hash code for multiple values into a single hash code.
-  * `Index` - Represents a type that can be used to index a collection either from the beginning or the end.
-  * `IntPtr` - Represents a signed integer where the bit-width is the same as a pointer.
-  * `Nullable<T>` - Represents a value type that can be assigned null.
-  * `SByte` - Represents an 8-bit signed integer.
-  * `TypedReference` - Describes objects that contain both a managed pointer to a location and a runtime representation of the type that may be stored at that location.
-  * `UIntPtr` - Represents an unsigned integer where the bit-width is the same as a pointer.
-  * `Void` - Specifies a return value type for a method that does not return a value.
-
-</details>
-
-<details>
 <summary>Delegates</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/delegates-lambdas)
 
 * Classes
   * `Delegate` - Represents a delegate, which is a data structure that refers to a static method or to a class instance and an instance method of that class.
@@ -252,6 +146,11 @@ System Namespace
 <details>
 <summary>Diagnostics</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/)
+
+* Classes
+  * `FakeLoggerServiceProviderExtensions` - Extensions for configuring fake logging, used in unit tests.
+  * `FakeRedactionServiceProviderExtensions` - Extensions that allow registering a fake redactor in the application.
 * Namespaces
   * [`System.Diagnostics`](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics?view=net-8.0) - Provides classes that allow you to interact with system processes, event logs, and performance counters.
   * [`System.Diagnostics.CodeAnalysis`](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis?view=net-8.0) - Contains classes for interaction with code analysis tools. These tools are used to analyze code for conformance to coding conventions such as naming or security rules.
@@ -265,33 +164,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Directory Services</summary>
-
-* Namespaces
-  * [`System.DirectoryServices`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices?view=net-8.0) - Provides easy access to Active Directory Domain Services from managed code. The namespace contains two component classes, DirectoryEntry and DirectorySearcher, which use the Active Directory Services Interfaces (ADSI) technology. ADSI is the set of interfaces that Microsoft provides as a flexible tool for working with a variety of network providers. ADSI gives the administrator the ability to locate and manage resources on a network with relative ease, regardless of the size of the network.
-  * [`System.DirectoryServices.AccountManagement`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.accountmanagement?view=net-8.0) - Provides uniform access and manipulation of user, computer, and group security principals across the multiple principal stores Active Directory Domain Services (AD DS), Active Directory Lightweight Directory Services (AD LDS), and Machine SAM (MSAM). System.DirectoryServices.AccountManagement manages directory objects independent of the System.DirectoryServices namespace.
-  * [`System.DirectoryServices.ActiveDirectory`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.activedirectory?view=net-8.0) - Provides a high level abstraction object model that builds around Microsoft Active Directory services tasks. The Active Directory service concepts such as forest, domain, site, subnet, partition, and schema are part of the object model.
-  * [`System.DirectoryServices.Protocols`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.protocols?view=net-8.0) - Provides the methods defined in the Lightweight Directory Access Protocol (LDAP) version 3 (V3) and Directory Services Markup Language (DSML) version 2.0 (V2) standards.
-
-</details>
-
-<details>
-<summary>Drawing</summary>
-
-* Namespaces
-  * [`System.Drawing`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing?view=net-8.0) - Provides access to GDI+ basic graphics functionality. The System.Drawing.Drawing2D, System.Drawing.Imaging, and System.Drawing.Text namespaces provide more advanced functionality. For limitations, see the Remarks section.
-  * [`System.Drawing.Configuration`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.configuration?view=net-8.0) - Contains a class that supports configuration for classes in the System.Drawing namespace.
-  * [`System.Drawing.Design`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.design?view=net-8.0) - Contains classes that extend design-time user interface (UI) logic and drawing.
-  * [`System.Drawing.Drawing2D`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.drawing2d?view=net-8.0) - Provides advanced two-dimensional and vector graphics functionality.
-  * [`System.Drawing.Imaging`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.imaging?view=net-8.0) - Provides advanced GDI+ imaging functionality. Basic graphics functionality is provided by the System.Drawing namespace.
-  * [`System.Drawing.Interop`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.interop?view=net-8.0)
-  * [`System.Drawing.Printing`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=net-8.0) - Provides print-related services for Windows Forms applications.
-  * [`System.Drawing.Text`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.text?view=net-8.0) - Provides advanced GDI+ typography functionality.
-
-</details>
-
-<details>
 <summary>Environment</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.environment?view=net-8.0)
 
 * Classes
   * `Environment` - Provides information about, and means to manipulate, the current environment and platform. This class cannot be inherited.
@@ -304,16 +179,16 @@ System Namespace
 * Exception Classes
   * `PlatformNotSupportedException` - The exception that is thrown when a feature does not run on a particular platform.
   * `UnauthorizedAccessException` - The exception that is thrown when the operating system denies access because of an I/O error or a specific type of security error.
-* Namespaces
-  * [`System.Management`](https://learn.microsoft.com/en-us/dotnet/api/system.management?view=net-8.0) - Provides access to a rich set of management information and management events about the system, devices, and applications instrumented to the Windows Management Instrumentation (WMI) infrastructure. Applications and services can query for interesting management information (such as how much free space is left on the disk, what is the current CPU utilization, which database a certain application is connected to, and much more), using classes derived from ManagementObjectSearcher and ManagementQuery, or subscribe to a variety of management events using the ManagementEventWatcher class. The accessible data can be from both managed and unmanaged components in the distributed environment.
 
 </details>
 
 <details>
 <summary>Events</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/events/)
+
 * Classes
-  * `EventArgs` - Represents the base class for classes that contain event data, and provides a value to use for events that do not include event data.`
+  * `EventArgs` - Represents the base class for classes that contain event data, and provides a value to use for events that do not include event data.
 * Delegates
   * `EventHandler` - Represents the method that will handle an event that has no event data.
   * `EventHandler<TEventArgs>` - Represents the method that will handle an event when the event provides data.
@@ -323,10 +198,13 @@ System Namespace
 <details>
 <summary>Exceptions</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/)
+
 * Classes
   * `ArgumentException` - The exception that is thrown when one of the arguments provided to a method is not valid.
   * `ArgumentNullException` - The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
   * `ArgumentOutOfRangeException` - The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the    invoked method.
+  * `Exception` - Represents errors that occur during application execution.
   * `FieldAccessException` - The exception that is thrown when there is an invalid attempt to access a private or protected field inside a class.
   * `InvalidOperationException` - The exception that is thrown when a method call is invalid for the object's current state.
   * `MemberAccessException` - The exception that is thrown when an attempt to access a class member fails.
@@ -353,6 +231,8 @@ System Namespace
 <details>
 <summary>Formatting</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/base-types/formatting-types)
+
 * Classes
   * `FormattableString` - Represents a composite format string, along with the arguments to be formatted.
 * Enums
@@ -374,7 +254,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Globalization</summary>
+<summary>Globalization and Localization</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/core/extensions/globalization-and-localization)
 
 * Classes
   * `TimeProvider` - Provides an abstraction for time.
@@ -404,6 +286,8 @@ System Namespace
 <details>
 <summary>I/O</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/io/)
+  
 * Namespaces
   * [`System.IO`](https://learn.microsoft.com/en-us/dotnet/api/system.io?view=net-8.0) - Contains types that allow reading and writing to files and data streams, and types that provide basic file and directory support.
   * [`System.IO.Compression`](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-8.0) - Contains classes that provide basic compression and decompression services for streams.
@@ -419,19 +303,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Identity Model</summary>
-
-* Namespaces
-  * [`System.IdentityModel`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel?view=net-8.0) - Contains classes that are used to build security token services (STS). These include the SecurityTokenService and Scope classes, as    well as exception several utility classes that provide the ability to perform cookie transforms.
-  * [`System.IdentityModel.Claims`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.claims?view=net-8.0) - Contains classes that implement the Windows Communication Foundation (WCF) claims-based identity authorization model. This model includes the Claim class and the ClaimSet class. Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. The WIF classes that represent claims, claim types, and identities and principals that are based on claims are contained in the System.Security.Claims namespace. Beginning with .NET 4.5, these classes should be used instead of those in the System.IdentityModel.Claims namespace.
-  * [`System.IdentityModel.Policy`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.policy?view=net-8.0) - Contains classes that are used to implement authorization policy when using the WCF claims-based identity model. Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. In WIF, authorization policy is implemented by extending the ClaimsAuthorizationManager class. Beginning with .NET 4.5, authorization policy should be implemented by using WIF instead of the classes in the System.IdentityModel.Claims namespace.
-  * [`System.IdentityModel.Selectors`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.selectors?view=net-8.0) - Contains classes that implement authentication in the Windows Communication Foundation (WCF) claims-based identity model. Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. The WIF classes that represent security tokens and that are used to process security tokens are contained in the System.IdentityModel.Tokens namespace; for example, SecurityToken and SecurityTokenHandler. Beginning with .NET 4.5, the classes in the System.IdentityModel.Tokens namespace should be used instead of those in the System.IdentityModel.Selectors namespace.
-  * [`System.IdentityModel.Tokens`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.tokens?view=net-8.0) - Contains base classes such as SecurityToken, SecurityTokenHandler, and SecurityKeyIdentifierClause, as well as classes that derive from these classes and represent several of the token types, artifacts, and handlers for which the Windows Identity Foundation (WIF) has built in support. This includes classes that contain support for SAML v1.1 and v2.0 tokens, such as SamlSecurityToken, SamlSecurityTokenHandler, Saml2SecurityToken, and Saml2SecurityTokenHandler.
-
-</details>
-
-<details>
 <summary>LINQ</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/linq/)
 
 * Namespaces
   * [`System.Dynamic`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?view=net-8.0) - Provides classes and interfaces that support Dynamic Language Runtime.
@@ -441,15 +315,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Media</summary>
-
-* Namespaces
-  * [`System.Media`](https://learn.microsoft.com/en-us/dotnet/api/system.media?view=net-8.0) - Contains classes for playing sound files and accessing sounds provided by the system.
-
-</details>
-
-<details>
 <summary>Memory</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/automatic-memory-management)
 
 * Classes
   * `BinaryData` - A lightweight abstraction for a payload of bytes that supports converting between string, stream, JSON, and bytes.
@@ -489,6 +357,8 @@ System Namespace
 <details>
 <summary>Net</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.net?view=net-8.0)
+
 * Namespaces
   * [`System.Net`](https://learn.microsoft.com/en-us/dotnet/api/system.net?view=net-8.0) - Provides a simple programming interface for many of the protocols used on networks today. Classes in the System.Net namespace can be used to develop Windows Store apps or desktop apps. When used in a Windows Store app, classes in the System.Net namespace are affected by network isolation feature, part of the application security model used by the Windows Developer Preview. The appropriate network capabilities must be enabled in the app manifest for a Windows Store app for the system to allow network access by a Windows Store app. For more information, see the Network Isolation for Windows Store Apps.
   * [`System.Net.Cache`](https://learn.microsoft.com/en-us/dotnet/api/system.net.cache?view=net-8.0) - Defines the types and enumerations used to define cache policies for resources obtained using the WebRequest and HttpWebRequest classes.
@@ -510,16 +380,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Notification</summary>
-
-* Interfaces
-  * `IObservable<T>` - Defines a provider for push-based notification.
-  * `IObserver<T>` - Provides a mechanism for receiving push-based notifications.
-
-</details>
-
-<details>
 <summary>Numerics</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/numerics)
 
 * Classes
   * `Math` - Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.
@@ -551,7 +414,20 @@ System Namespace
 </details>
 
 <details>
+<summary>Observer Pattern</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern)
+
+* Interfaces
+  * `IObservable<T>` - Defines a provider for push-based notification.
+  * `IObserver<T>` - Provides a mechanism for receiving push-based notifications.
+
+</details>
+
+<details>
 <summary>Parsing</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/base-types/parsing-strings)
 
 * Interfaces
   * `IParsable<TSelf>` - Defines a mechanism for parsing a string to a value.
@@ -563,6 +439,8 @@ System Namespace
 <details>
 <summary>Progress</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.progress-1?view=net-8.0)
+
 * Classes
   * `Progress<T>` - Provides an `IProgress<T>` that invokes callbacks for each reported progress value.
 * Interfaces
@@ -573,9 +451,10 @@ System Namespace
 <details>
 <summary>Reflection</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/fundamentals/reflection/reflection)
+
 * Classes
   * `Type` - Represents type declarations class types, interface types, array types, value types, enumeration types, type parameters, generic type definitions, and open or closed constructed generic types.
-
 * Namespaces
   * [`System.Reflection`](https://learn.microsoft.com/en-us/dotnet/api/system.reflection?view=net-8.0) - Contains types that retrieve information about assemblies, modules, members, parameters, and other entities in managed code by examining their metadata. These types also can be used to manipulate instances of loaded types, for example to hook up events or to invoke methods. To dynamically create types, use the System.Reflection.Emit namespace.
   * [`System.Reflection.Context`](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.context?view=net-8.0) - Contains classes that enable customized reflection contexts.
@@ -588,6 +467,8 @@ System Namespace
 
 <details>
 <summary>Runtime</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview)
 
 * Attributes
   * `LoaderOptimizationAttribute` - Used to set the default loader optimization policy for the main method of an executable application.
@@ -653,6 +534,8 @@ System Namespace
 <details>
 <summary>Security</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/security/key-security-concepts)
+
 * Namespaces
   * [`System.Security`](https://learn.microsoft.com/en-us/dotnet/api/system.security?view=net-8.0) - Provides the underlying structure of the common language runtime security system, including base classes for permissions.
   * [`System.Security.AccessControl`](https://learn.microsoft.com/en-us/dotnet/api/system.security?view=net-8.0) - Provides programming elements that control access to and audit security-related actions on securable objects.
@@ -671,52 +554,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Service Model</summary>
-
-* Namespaces
-  * [`System.ServiceModel`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel?view=net-8.0) - Provides classes related to the service model.
-  * [`System.ServiceModel.Channels`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.channels?view=net-8.0) - Provides classes related to service model channels.
-  * [`System.ServiceModel.Description`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.description?view=net-8.0) - Provides classes related to the service model description.
-  * [`System.ServiceModel.Dispatcher`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.dispatcher?view=net-8.0) - Provides classes related to dispatching the service model.
-  * [`System.ServiceModel.Federation`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.federation?view=net-8.0)
-  * [`System.ServiceModel.Security`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.security?view=net-8.0) - Contains general security-related types.
-  * [`System.ServiceModel.Security.Tokens`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.tokens?view=net-8.0) - Deals with security tokens and certificates.
-  * [`System.ServiceModel.Syndication`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.syndication?view=net-8.0) - Provides classes related to service model syndication.
-
-</details>
-
-<details>
-<summary>Service Process</summary>
-
-* Namespaces
-  * [`System.ServiceProcess`](https://learn.microsoft.com/en-us/dotnet/api/system.serviceprocess?view=net-8.0) - Provides classes that allow you to implement, install, and control Windows service applications. Services are long-running    executables that run without a user interface. Implementing a service involves inheriting from the ServiceBase class and defining specific behavior to process when start, stop, pause, and continue commands are passed in, as well as custom behavior and actions to take when the system shuts down.
-
-</details>
-
-<details>
-<summary>Speech</summary>
-
-* Namespaces
-  * [`System.Speech`](https://learn.microsoft.com/en-us/dotnet/api/system.speech?view=net-8.0) - Provides classes related to speech recognition.
-  * [`System.Speech.AudioFormat`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.audioformat?view=net-8.0) - Contains a single class, SpeechAudioFormatInfo, that contains information about the format of the audio that is being input to the speech recognition engine, or being output from the speech synthesis engine.
-  * [`System.Speech.Recognition`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.recognition?view=net-8.0) - Contains Windows Desktop Speech technology types for implementing speech recognition.
-  * [`System.Speech.Recognition.SrgsGrammar`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.recognition.srgsgrammar?view=net-8.0) - With the members of the System.Speech.Recognition.SrgsGrammar namespace, you can programmatically create grammars that comply with the W3C Speech Recognition Grammar Specification Version 1.0 (SRGS).
-  * [`System.Speech.Synthesis`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis?view=net-8.0) - Contains classes for initializing and configuring a speech synthesis engine, for creating prompts, for generating speech, for responding to events, and for modifying voice characteristics.
-  * [`System.Speech.Synthesis.TtsEngine`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis.ttsengine?view=net-8.0) - Supports the creation of Speech Synthesis Markup Language (SSML) based custom engines for rendering text to speech (TTS).
-
-</details>
-
-<details>
-<summary>Testing</summary>
-
-* Classes
-  * `FakeLoggerServiceProviderExtensions` - Extensions for configuring fake logging, used in unit tests.
-  * `FakeRedactionServiceProviderExtensions` - Extensions that allow registering a fake redactor in the application.
-
-</details>
-
-<details>
 <summary>Text</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/base-types/character-encoding)
 
 * Classes
   * `CharEnumerator` - Supports iterating over a String object and reading its individual characters. This class cannot be inherited.
@@ -738,6 +578,8 @@ System Namespace
 
 <details>
 <summary>Threading</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/threading/managed-threading-basics)
 
 * Attributes
   * `MTAThreadAttribute` - Indicates that the COM threading model for an application is multithreaded apartment (MTA).
@@ -765,6 +607,8 @@ System Namespace
 <details>
 <summary>Timer</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/threading/timers)
+
 * Classes
   * `ElapsedEventArgs` - Provides data for the Elapsed event.
   * `Timer` - Generates an event after a set interval, with an option to generate recurring events.
@@ -779,6 +623,8 @@ System Namespace
 <details>
 <summary>Transactions</summary>
 
+* [Overview](https://learn.microsoft.com/en-us/dotnet/framework/data/transactions/transaction-fundamentals)
+
 * Namespaces
   * [`System.Transactions`](https://learn.microsoft.com/en-us/dotnet/api/system.transactions?view=net-8.0) - Contains classes that allow you to write your own transactional application and resource manager. Specifically, you can create and participate in a transaction (local or distributed) with one or multiple participants.
 
@@ -786,6 +632,8 @@ System Namespace
 
 <details>
 <summary>Tuples</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples#tuples-vs-systemtuple)
 
 * Classes
   * `Tuple` - Provides static methods for creating tuple objects.
@@ -812,7 +660,86 @@ System Namespace
 </details>
 
 <details>
+<summary>Types</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system)
+
+* Attributes
+  * `FlagsAttribute` - Indicates that an enumeration can be treated as a bit field; that is, a set of flags.
+* Classes
+  * `Activator` - Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited.
+  * `ContextBoundObject` - Defines the base class for all context-bound classes.
+  * `DBNull` - Represents a nonexistent value. This class cannot be inherited.
+  * `Enum` - Provides the base class for enumerations.
+  * `Lazy<T>` - Provides support for lazy initialization.
+  * `Lazy<T,TMetadata>` - Provides a lazy indirect reference to an object and its associated metadata for use by the Managed Extensibility Framework.
+  * `MarshalByRefObject` - Enables access to objects across application domain boundaries in applications that support remoting.
+  * `Nullable` - Supports a value type that can be assigned null. This class cannot be inherited.
+  * `Object` - Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+  * `String` - Represents text as a sequence of UTF-16 code units.
+  * `ValueType` - Provides the base class for value types.
+  * `WeakReference` - Represents a weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.
+  * `WeakReference<T>` - Represents a typed weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.
+* Enums
+  * `TypeCode` - Specifies the type of an object.
+* Interfaces
+  * `ICloneable` - Supports cloning, which creates a new instance of a class with the same value as an existing instance.
+* Structs
+  * `Boolean` - Represents a Boolean (true or false) value.
+  * `Byte` - Represents an 8-bit unsigned integer.
+  * `Char` - Represents a character as a UTF-16 code unit.
+  * `Guid` - Represents a globally unique identifier (GUID).
+  * `HashCode` - Combines the hash code for multiple values into a single hash code.
+  * `Index` - Represents a type that can be used to index a collection either from the beginning or the end.
+  * `IntPtr` - Represents a signed integer where the bit-width is the same as a pointer.
+  * `Nullable<T>` - Represents a value type that can be assigned null.
+  * `SByte` - Represents an 8-bit signed integer.
+  * `TypedReference` - Describes objects that contain both a managed pointer to a location and a runtime representation of the type that may be stored at that location.
+  * `UIntPtr` - Represents an unsigned integer where the bit-width is the same as a pointer.
+  * `Void` - Specifies a return value type for a method that does not return a value.
+
+</details>
+
+<details>
+<summary>Type Comparison</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable?view=net-8.0)
+
+* Classes
+  * `StringComparer` - Represents a string comparison operation that uses specific case and culture-based or ordinal comparison rules.
+* Delegates
+  * `Comparison<T>` - Represents the method that compares two objects of the same type.
+  * `Predicate<T>` - Represents the method that defines a set of criteria and determines whether the specified object meets those criteria.
+* Enums
+  * `StringComparison` - Specifies the culture, case, and sort rules to be used by certain overloads of the Compare(String, String) and Equals(Object) methods.
+* Interfaces
+  * `IComparable` - Defines a generalized type-specific comparison method that a value type or class implements to order or sort its instances.
+  * `IComparable<T>` - Defines a generalized comparison method that a value type or class implements to create a type-specific comparison method for ordering or sorting its instances.
+  * `IEquatable<T>` - Defines a generalized method that a value type or class implements to create a type-specific method for determining equality of instances.
+
+</details>
+
+<details>
+<summary>Type Conversion</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/base-types/type-conversion)
+
+* Classes
+  * `BitConverter` - Converts base data types to an array of bytes, and an array of bytes to base data types.
+  * `Convert` - Converts a base data type to another base data type.
+* Delegates
+  * `Converter<TInput,TOutput>` - Represents a method that converts an object from one type to another type.
+* Exception Classes
+  * `InvalidCastException` - The exception that is thrown for invalid casting or explicit conversion.
+* Interfaces
+  * `IConvertible` - Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value.
+
+</details>
+
+<details>
 <summary>Uri</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-uri)
 
 * Classes
   * `FileStyleUriParser` - A customizable parser based on the File scheme.
@@ -844,25 +771,9 @@ System Namespace
 </details>
 
 <details>
-<summary>Web</summary>
-
-* Namespaces
-  * [`System.Web`](https://learn.microsoft.com/en-us/dotnet/api/system.web?view=net-8.0) - For .NET Core and .NET 5+, this namespace contains the HttpUtility class. For .NET Framework, this namespace contains classes and interfaces that enable browser-server communication. These classes include the HttpRequest class, which provides extensive information about the current HTTP request; the HttpResponse class, which manages HTTP output to the client; and the HttpServerUtility class, which provides access to server-side utilities and processes. System.Web also includes classes for cookie manipulation, file transfer, exception information, and output cache control in .NET Framework.
-
-</details>
-
-<details>
-<summary>Windows</summary>
-
-* Namespaces
-  * [`System.Windows`](https://learn.microsoft.com/en-us/dotnet/api/system.windows?view=net-8.0) - Provides classes related to Windows Presentation Foundation.
-  * [`System.Windows.Input`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input?view=net-8.0) - Most of the types in this namespace support the Windows Presentation Foundation (WPF) input system. This includes device abstraction classes for mouse, keyboard, and stylus devices, a common input manager class, support for commanding and custom commands, and various utility classes. However, some of the types are applicable beyond WPF.
-  * [`System.Windows.Markup`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.markup?view=net-8.0) - Provides types to support XAML. Some of these types are located in WPF assemblies and are specific to WPF scenarios that involve XAML. Other types in this namespace provide support for .NET XAML Services in general, and don't require referencing WPF assemblies.
-
-</details>
-
-<details>
 <summary>XAML</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.xaml?view=windowsdesktop-8.0)
 
 * Namespaces
   * [`System.Xaml`](https://learn.microsoft.com/en-us/dotnet/api/system.xaml?view=net-8.0) - Provides classes related to XAML.
@@ -872,6 +783,8 @@ System Namespace
 
 <details>
 <summary>XML</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/standard/data/xml/)
 
 * Namespaces
   * [`System.Xml`](https://learn.microsoft.com/en-us/dotnet/api/system.xml?view=net-8.0) - Provides standards-based support for processing XML.
@@ -883,3 +796,165 @@ System Namespace
   * [`System.Xml.Xsl`](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xsl?view=net-8.0) - Provides support for Extensible Stylesheet Transformation (XSLT) transforms. It supports the W3C XSL Transformations (XSLT) Version 1.0 Recommendation.
 
 </details>
+
+### Deprecated
+
+<details>
+<summary>CodeDOM</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
+
+* Namespaces
+  * [`System.CodeDom`](https://learn.microsoft.com/en-us/dotnet/api/system.codedom?view=net-8.0) - Contains classes that can be used to represent the elements and structure of a source code document. The classes in this namespace can be used to model the structure of a source code document that can be output as source code in a supported language using the functionality provided by the System.CodeDom.Compiler namespace.
+  * [`System.CodeDom.Compiler`](https://learn.microsoft.com/en-us/dotnet/api/system.codedom.compiler?view=net-8.0) - Contains types for managing the generation and compilation of source code in supported programming languages. Code generators can each produce source code in a particular programming language based on the structure of Code Document Object Model (CodeDOM) source code models consisting of elements provided by the System.CodeDom namespace.
+
+</details>
+
+<details>
+<summary>Component Model and Composition</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/framework/mef/)
+
+* Interfaces
+  * `IServiceProvider` - Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.
+* Namespaces
+  * [`System.ComponentModel`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel?view=net-8.0) - Provides classes that are used to implement the run-time and design-time behavior of components and controls. This namespace includes the base classes and interfaces for implementing attributes and type converters, binding to data sources, and licensing components.
+  * [`System.ComponentModel.Composition`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition?view=net-8.0) - This namespace provides classes that constitute the core of the Managed Extensibility Framework, or MEF.
+  * [`System.ComponentModel.Composition.Hosting`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.hosting?view=net-8.0) - Provides Managed Extensibility Framework (MEF) types that are useful to developers of extensible applications, or hosts.
+  * [`System.ComponentModel.Composition.Primitives`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.primitives?view=net-8.0) - This namespace provides the primitive types underlying the MEF programming model.
+  * [`System.ComponentModel.Composition.ReflectionModel`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.reflectionmodel?view=net-8.0) - Provides Managed Extensibility Framework (MEF) types for developers who use a reflection-based programming model.
+  * [`System.ComponentModel.Composition.Registration`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.composition.registration?view=net-8.0) - Contains types that enable rule-based configuration of Managed Extensibility Framework (MEF) parts.
+  * [`System.ComponentModel.DataAnnotations`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=net-8.0) - Provides attribute classes that are used to define metadata for ASP.NET MVC and ASP.NET data controls.
+  * [`System.ComponentModel.DataAnnotations.Schema`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.schema?view=net-8.0) - Provides support for attribute classes that are used to define metadata for ASP.NET MVC and ASP.NET data controls.
+  * [`System.ComponentModel.Design`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.design?view=net-8.0) - Contains classes that developers can use to build custom design-time behavior for components and user interfaces for configuring components at design time. The design time environment provides systems that enable developers to arrange components and configure their properties. Some components may require specific design-time only behavior to function properly in a design time environment. It may also be valuable to provide custom user interfaces which assist developers in configuring components or the values of complex data types. The classes and interfaces defined within this namespace can be used to build design-time behavior for components, access design-time services, and implement customized design-time configuration interfaces.
+  * [`System.ComponentModel.Design.Serialization`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.design.serialization?view=net-8.0) - Provides types that support customization and control of serialization at design time.
+  * [`System.Composition`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes for creating and specifying export attributes, retrieving exports from a composition, configuring import attributes, and for specifying how parts interact during composition.
+  * [`System.Composition.Convention`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes that represent convention builders for constructing rules used to configure CLR objects as MEF parts.
+  * [`System.Composition.Hosting`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes for building and configuring a composition container and for reporting exceptions from a failed composition.
+  * [`System.Composition.Hosting.Core`](https://learn.microsoft.com/en-us/dotnet/api/system.composition?view=net-8.0) - Contains classes that represent core functionality of the composition engine, including composition operations, contracts, part dependencies, export descriptions, and the lifetime context of a shared part that governs how it can be disposed.
+
+</details>
+
+<details>
+<summary>Web</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.web?view=net-8.0)
+
+* Namespaces
+  * [`System.Web`](https://learn.microsoft.com/en-us/dotnet/api/system.web?view=net-8.0) - For .NET Core and .NET 5+, this namespace contains the HttpUtility class. For .NET Framework, this namespace contains classes and interfaces that enable browser-server communication. These classes include the HttpRequest class, which provides extensive information about the current HTTP request; the HttpResponse class, which manages HTTP output to the client; and the HttpServerUtility class, which provides access to server-side utilities and processes. System.Web also includes classes for cookie manipulation, file transfer, exception information, and output cache control in .NET Framework.
+
+</details>
+
+### Windows Only
+
+<details>
+<summary>Active Directory</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices?view=net-8.0)
+
+* Namespaces
+  * [`System.DirectoryServices`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices?view=net-8.0) - Provides easy access to Active Directory Domain Services from managed code. The namespace contains two component classes, DirectoryEntry and DirectorySearcher, which use the Active Directory Services Interfaces (ADSI) technology. ADSI is the set of interfaces that Microsoft provides as a flexible tool for working with a variety of network providers. ADSI gives the administrator the ability to locate and manage resources on a network with relative ease, regardless of the size of the network.
+  * [`System.DirectoryServices.AccountManagement`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.accountmanagement?view=net-8.0) - Provides uniform access and manipulation of user, computer, and group security principals across the multiple principal stores Active Directory Domain Services (AD DS), Active Directory Lightweight Directory Services (AD LDS), and Machine SAM (MSAM). System.DirectoryServices.AccountManagement manages directory objects independent of the System.DirectoryServices namespace.
+  * [`System.DirectoryServices.ActiveDirectory`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.activedirectory?view=net-8.0) - Provides a high level abstraction object model that builds around Microsoft Active Directory services tasks. The Active Directory service concepts such as forest, domain, site, subnet, partition, and schema are part of the object model.
+  * [`System.DirectoryServices.Protocols`](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.protocols?view=net-8.0) - Provides the methods defined in the Lightweight Directory Access Protocol (LDAP) version 3 (V3) and Directory Services Markup Language (DSML) version 2.0 (V2) standards.
+
+</details>
+
+<details>
+<summary>Drawing (GDI+)</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.graphics?view=net-8.0)
+
+* Namespaces
+  * [`System.Drawing`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing?view=net-8.0) - Provides access to GDI+ basic graphics functionality. The System.Drawing.Drawing2D, System.Drawing.Imaging, and System.Drawing.Text namespaces provide more advanced functionality. For limitations, see the Remarks section.
+  * [`System.Drawing.Configuration`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.configuration?view=net-8.0) - Contains a class that supports configuration for classes in the System.Drawing namespace.
+  * [`System.Drawing.Design`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.design?view=net-8.0) - Contains classes that extend design-time user interface (UI) logic and drawing.
+  * [`System.Drawing.Drawing2D`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.drawing2d?view=net-8.0) - Provides advanced two-dimensional and vector graphics functionality.
+  * [`System.Drawing.Imaging`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.imaging?view=net-8.0) - Provides advanced GDI+ imaging functionality. Basic graphics functionality is provided by the System.Drawing namespace.
+  * [`System.Drawing.Interop`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.interop?view=net-8.0)
+  * [`System.Drawing.Printing`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=net-8.0) - Provides print-related services for Windows Forms applications.
+  * [`System.Drawing.Text`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.text?view=net-8.0) - Provides advanced GDI+ typography functionality.
+
+</details>
+
+<details>
+<summary>Identity Model</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.tokens.securitytoken?view=net-8.0)
+
+* Namespaces
+  * [`System.IdentityModel`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel?view=net-8.0) - Contains classes that are used to build security token services (STS). These include the SecurityTokenService and Scope classes, as well as exception several utility classes that provide the ability to perform cookie transforms.
+  * [`System.IdentityModel.Claims`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.claims?view=net-8.0) - Contains classes that implement the Windows Communication Foundation (WCF) claims-based identity authorization model. This model includes the Claim class and the ClaimSet class. Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. The WIF classes that represent claims, claim types, and identities and principals that are based on claims are contained in the System.Security.Claims namespace. Beginning with .NET 4.5, these classes should be used instead of those in the System.IdentityModel.Claims namespace.
+  * [`System.IdentityModel.Policy`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.policy?view=net-8.0) - Contains classes that are used to implement authorization policy when using the WCF claims-based identity model. Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. In WIF, authorization policy is implemented by extending the ClaimsAuthorizationManager class. Beginning with .NET 4.5, authorization policy should be implemented by using WIF instead of the classes in the System.IdentityModel.Claims namespace.
+  * [`System.IdentityModel.Selectors`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.selectors?view=net-8.0) - Contains classes that implement authentication in the Windows Communication Foundation (WCF) claims-based identity model. Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. The WIF classes that represent security tokens and that are used to process security tokens are contained in the System.IdentityModel.Tokens namespace; for example, SecurityToken and SecurityTokenHandler. Beginning with .NET 4.5, the classes in the System.IdentityModel.Tokens namespace should be used instead of those in the System.IdentityModel.Selectors namespace.
+  * [`System.IdentityModel.Tokens`](https://learn.microsoft.com/en-us/dotnet/api/system.identitymodel.tokens?view=net-8.0) - Contains base classes such as SecurityToken, SecurityTokenHandler, and SecurityKeyIdentifierClause, as well as classes that derive from these classes and represent several of the token types, artifacts, and handlers for which the Windows Identity Foundation (WIF) has built in support. This includes classes that contain support for SAML v1.1 and v2.0 tokens, such as SamlSecurityToken, SamlSecurityTokenHandler, Saml2SecurityToken, and Saml2SecurityTokenHandler.
+
+</details>
+
+<details>
+<summary>Media</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.media?view=net-8.0)
+
+* Namespaces
+  * [`System.Media`](https://learn.microsoft.com/en-us/dotnet/api/system.media?view=net-8.0) - Contains classes for playing sound files and accessing sounds provided by the system.
+
+</details>
+
+<details>
+<summary>Service Process</summary>
+
+* Namespaces
+  * [`System.ServiceProcess`](https://learn.microsoft.com/en-us/dotnet/api/system.serviceprocess?view=net-8.0) - Provides classes that allow you to implement, install, and control Windows service applications. Services are long-running    executables that run without a user interface. Implementing a service involves inheriting from the ServiceBase class and defining specific behavior to process when start, stop, pause, and continue commands are passed in, as well as custom behavior and actions to take when the system shuts down.
+
+</details>
+
+<details>
+<summary>Speech</summary>
+
+* Namespaces
+  * [`System.Speech.AudioFormat`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.audioformat?view=net-8.0) - Contains a single class, SpeechAudioFormatInfo, that contains information about the format of the audio that is being input to the speech recognition engine, or being output from the speech synthesis engine.
+  * [`System.Speech.Recognition`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.recognition?view=net-8.0) - Contains Windows Desktop Speech technology types for implementing speech recognition.
+  * [`System.Speech.Recognition.SrgsGrammar`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.recognition.srgsgrammar?view=net-8.0) - With the members of the System.Speech.Recognition.SrgsGrammar namespace, you can programmatically create grammars that comply with the W3C Speech Recognition Grammar Specification Version 1.0 (SRGS).
+  * [`System.Speech.Synthesis`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis?view=net-8.0) - Contains classes for initializing and configuring a speech synthesis engine, for creating prompts, for generating speech, for responding to events, and for modifying voice characteristics.
+  * [`System.Speech.Synthesis.TtsEngine`](https://learn.microsoft.com/en-us/dotnet/api/system.speech.synthesis.ttsengine?view=net-8.0) - Supports the creation of Speech Synthesis Markup Language (SSML) based custom engines for rendering text to speech (TTS).
+
+</details>
+
+<details>
+<summary>WCF Service Model</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf)
+
+* Namespaces
+  * [`System.ServiceModel`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel?view=net-8.0) - Provides classes related to the service model.
+  * [`System.ServiceModel.Channels`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.channels?view=net-8.0) - Provides classes related to service model channels.
+  * [`System.ServiceModel.Description`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.description?view=net-8.0) - Provides classes related to the service model description.
+  * [`System.ServiceModel.Dispatcher`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.dispatcher?view=net-8.0) - Provides classes related to dispatching the service model.
+  * [`System.ServiceModel.Federation`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.federation?view=net-8.0)
+  * [`System.ServiceModel.Security`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.security?view=net-8.0) - Contains general security-related types.
+  * [`System.ServiceModel.Security.Tokens`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.tokens?view=net-8.0) - Deals with security tokens and certificates.
+  * [`System.ServiceModel.Syndication`](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.syndication?view=net-8.0) - Provides classes related to service model syndication.
+
+</details>
+
+<details>
+<summary>Windows Management Instrumentation</summary>
+
+* Namespaces
+  * [`System.Management`](https://learn.microsoft.com/en-us/dotnet/api/system.management?view=net-8.0) - Provides access to a rich set of management information and management events about the system, devices, and applications instrumented to the Windows Management Instrumentation (WMI) infrastructure. Applications and services can query for interesting management information (such as how much free space is left on the disk, what is the current CPU utilization, which database a certain application is connected to, and much more), using classes derived from ManagementObjectSearcher and ManagementQuery, or subscribe to a variety of management events using the ManagementEventWatcher class. The accessible data can be from both managed and unmanaged components in the distributed environment.
+
+</details>
+
+<details>
+<summary>Windows Presentation Foundation</summary>
+
+* [Overview](https://learn.microsoft.com/en-us/dotnet/api/system.windows?view=windowsdesktop-8.0)
+
+* Namespaces
+  * [`System.Windows`](https://learn.microsoft.com/en-us/dotnet/api/system.windows?view=net-8.0) - Provides classes related to Windows Presentation Foundation.
+  * [`System.Windows.Input`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input?view=net-8.0) - Most of the types in this namespace support the Windows Presentation Foundation (WPF) input system. This includes device abstraction classes for mouse, keyboard, and stylus devices, a common input manager class, support for commanding and custom commands, and various utility classes. However, some of the types are applicable beyond WPF.
+  * [`System.Windows.Markup`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.markup?view=net-8.0) - Provides types to support XAML. Some of these types are located in WPF assemblies and are specific to WPF scenarios that involve XAML. Other types in this namespace provide support for .NET XAML Services in general, and don't require referencing WPF assemblies.
+
+</details>
+
