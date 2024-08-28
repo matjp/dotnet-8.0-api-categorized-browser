@@ -84,7 +84,7 @@
   * `Console` - Represents the standard input, output, and error streams for console applications. This class cannot be inherited.
   * `ConsoleCancelEventArgs` - Provides data for the CancelKeyPress event. This class cannot be inherited.
 * Delegates
-  `ConsoleCancelEventHandler` - Represents the method that will handle the CancelKeyPress event of a Console.
+  * `ConsoleCancelEventHandler` - Represents the method that will handle the CancelKeyPress event of a Console.
 * Enums
   * `ConsoleColor` - Specifies constants that define foreground and background colors for the console.
   * `ConsoleKey` - Specifies the standard keys on a console.
@@ -845,7 +845,7 @@
 
 </details>
 
-### Windows Only
+### Windows Specific
 
 <details>
 <summary>Active Directory</summary>
@@ -957,4 +957,3 @@
   * [`System.Windows.Markup`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.markup?view=net-8.0) - Provides types to support XAML. Some of these types are located in WPF assemblies and are specific to WPF scenarios that involve XAML. Other types in this namespace provide support for .NET XAML Services in general, and don't require referencing WPF assemblies.
 
 </details>
-
